@@ -56,9 +56,9 @@ def _setup_local_config_platform(ctx):
         print("Local host platform is configured to use this container if doing remote execution: {} built from {}".format(web_url, dockerfile))
         exec_props = """
     exec_properties = {
-        "container-image": "%s",
-        "dockerNetwork": "standard",
-        "Pool": "%s",
+        #"container-image": "%s",
+        #"dockerNetwork": "standard",
+        #"Pool": "%s",
     },
 """ % (container_url, remote_execution_pool)
     else:
